@@ -28,8 +28,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <h3 className='text-xl font-semibold mb-2'>{name}</h3>
         <p className='text-lg text-slate-500 mb-4'>{price}</p>
   
-        <button
-          onClick={() => handleAddToCart({ id, name, price, image })}
+        <button onClick={() => handleAddToCart({ id, name, price, image, quantity: 1 })}
+
+         
           className='bg-blue-500 text-white px-4 rounded-lg text-lg shadow-md hover:bg-blue-400 transition duration-300 ease-in-out'
         >
           Add To Cart
@@ -38,3 +39,4 @@ const ProductCard: React.FC<ProductCardProps> = ({
     );
   };
   export default ProductCard;
+
