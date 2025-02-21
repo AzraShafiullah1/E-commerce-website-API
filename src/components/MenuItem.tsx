@@ -203,12 +203,14 @@ const MenuItem = () => {
                     </li>
                   ))}
                 </ul>
+   
 
                 <div className="flex justify-between mt-4">
                   <span className="font-semibold">Total:</span>
                   <span className="font-semibold">
-                    ${cart.reduce((total, product) => total + parseFloat(product.price) * product.quantity, 0).toFixed(2)}
-                  </span>
+                  ${cart.reduce((total, product) => total + parseFloat(product.price?.toString() || "0") * product.quantity, 0).toFixed(2)}
+                </span>
+
                 </div>
               </div>
 
