@@ -1,5 +1,5 @@
 export interface Product {
-    quantity: ReactNode;
+    quantity: number;
     id: number;
     name: string;
     price: number;
