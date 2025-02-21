@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import { Product } from '@/pages/types';
+import { Product } from '@/pages/types/types';
 import React from 'react';
 
 interface ProductCardProps extends Product {

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ProductCard from "./ProductCard";
-import { Product } from "@/pages/types";
+import { Product } from "@/pages/types/types";
 
 const MenuItem = () => {
   const [products, setProducts] = useState<Product[]>([]);
